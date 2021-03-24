@@ -10,39 +10,54 @@ body {
 }
 
 /* Add styles here! */
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+header, main {
+  min-height: 50%;
+}
+
+header {
+  padding: 32px;
+  margin: auto;
+}
+
+header .max-width-wrapper {
+  margin: auto;
+}
+
+header p {
+  font-size: 1.25rem;
+}
+
 strong {
   color: hsl(160deg, 100%, 30%);
 }
 
 main {
-  background-color: hsl(0deg, 0%, 0%);
-  background-color: hsl(0deg, 0%, 10%);
-  background-color: hsl(0deg, 0%, 30%);
-  background-color: hsl(0deg, 0%, 40%);
   background-color: hsl(0deg, 0%, 60%);
-  /* background-color: hsl(0deg, 0%, 100%); */
-  padding: 32px;
+  /* padding: 32px; */
+  padding-top: 32px;
   /* margin: 16px; */
+  border: 10px hsl(0deg, 0%, 10%);
   border-top-style: ridge;
 }
 
-html {
-  height: 100%;
+section {
+  margin-top: auto;
+  margin-bottom: auto;
 }
-
-body, header {
-  padding: 32px;
-  margin: 16px;
-}
-
-/* .title {
-  padding: 8px 16px;
-} */
 
 .indented-heading {
   background-color: hsl(45deg, 100%, 50%);
   padding: 8px 16px;
   margin-top: 8px;
+  /* margin-left: -16px; */
   border-bottom-style: outset;
   width: max-content;
 }
@@ -54,7 +69,6 @@ body, header {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  border-bottom-style: inset;
 }
 
 .intro-chunk p {
