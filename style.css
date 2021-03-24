@@ -11,70 +11,70 @@ body {
 
 /* Add styles here! */
 html {
-  height: 100%;
+  font-size: 18px;
 }
 
-body {
-  height: 100%;
+/* margin reset */
+h1, h2 {
+  margin: 0;
 }
 
-header, main {
-  min-height: 50%;
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px; /* left&right padding is always there, so text doesn't run to the edge on smaller mobile screens */
 }
 
 header {
-  padding: 32px;
-  margin: auto;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
 }
 
-header .max-width-wrapper {
-  margin: auto;
+.intro-chunk {
+  padding: 96px 0 48px;
+  max-width: 400px;
 }
 
-header p {
+.intro-chunk .title {
+  font-size: 2rem;
+  margin-bottom: 48px;
+}
+
+.intro-chunk p {
   font-size: 1.25rem;
+  line-height: 1.4;
 }
 
-strong {
+.intro-chunk strong {
   color: hsl(160deg, 100%, 30%);
 }
 
 main {
   background-color: hsl(0deg, 0%, 60%);
-  /* padding: 32px; */
-  padding-top: 32px;
-  /* margin: 16px; */
-  border: 10px hsl(0deg, 0%, 10%);
-  border-top-style: ridge;
+  padding: 96px 0;
 }
 
-section {
-  margin-top: auto;
-  margin-bottom: auto;
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 24px;
+  /* padding-top: 8px; */ /* Not a best practice, solved with m-t on .indented-heading */
+  margin: -24px; /* Negative margin lets you add padding but still keep text aligned */
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
 }
 
 .indented-heading {
   background-color: hsl(45deg, 100%, 50%);
-  padding: 8px 16px;
-  margin-top: 8px;
-  /* margin-left: -16px; */
-  border-bottom-style: outset;
-  width: max-content;
-}
-
-.max-width-wrapper {
-  background-color: white;
-  width: fit-content;
-  padding: 8px;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.intro-chunk p {
-  width: 50%;
+  margin-left: -32px;
+  margin-top: -16px;
+  padding: 16px 32px;
+  width: fit-content; /* I used max-content, which means a line will keep going forever. this goes within constraints of parent, but no more */
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
 }
 
 .card p {
-  margin: 16px 16px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
 }
